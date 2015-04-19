@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/m_back"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.callerinfo.MainActivity" >
+
+    <Spinner
+        android:id="@+id/m_spinner_calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/m_image"
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/m_spinner_calendar"
+        android:clickable="false"
+        android:duplicateParentState="false"
+        android:src="@drawable/nocalendar"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/m_cal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/m_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/m_calbutton"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/m_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m_get_events"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="messages display"
+        android:textColor="#FF0000"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/m_setevent1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/m_image"
+        android:layout_centerVertical="true"
+        android:background="@drawable/m_rounded"
+        android:text="Button"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/m_get_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m_spinner_calendar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/m_buttonstyle"
+        android:drawableRight="@drawable/m_smallcal"
+        android:text="Get Events from "
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/m_setevent2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/m_image"
+        android:layout_below="@+id/m_setevent1"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/m_rounded"
+        android:text="Button"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/m_setevent3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/m_image"
+        android:layout_below="@+id/m_setevent2"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/m_rounded"
+        android:text="Button"
+        android:visibility="invisible" />
+
+</RelativeLayout>
